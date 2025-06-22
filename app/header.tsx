@@ -7,8 +7,15 @@ export function Header() {
     <header className="mb-8 flex items-center justify-between">
       <div>
         <Link href="/" className="font-medium text-black dark:text-white">
-          Julien Nim
+          Richard Y. Liu
         </Link>
+      </div>
+    </header>
+  )
+}
+
+/*
+
         <TextEffect
           as="p"
           preset="fade"
@@ -18,7 +25,4 @@ export function Header() {
         >
           Design Engineer
         </TextEffect>
-      </div>
-    </header>
-  )
-}
+*/
