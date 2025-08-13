@@ -16,6 +16,28 @@ type WorkExperience = {
   id: string
 }
 
+type Lab = {
+  name: string
+  position: string
+  place: string
+  logo: string
+  duration: string
+  description?: string
+  link?: string
+  id: string
+}
+
+type Work = {
+  company: string
+  position: string
+  place: string
+  logo: string
+  duration: string
+  description?: string
+  link?: string
+  id: string
+}
+
 type Book = {
   title: string
   author: string
@@ -96,6 +118,65 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
 ]
 
+export const LABS: Lab[] = [
+  {
+    name: 'Generalist Embodied AI Lab',
+    position: 'Research Intern',
+    place: 'Tongji University',
+    logo: './logos/tongji.svg',
+    duration: 'Jul. 2025 - Aug. 2025',
+    id: 'lab1',
+  },
+  {
+    name: 'Computer Science and Engineering Department',
+    position: 'Research Assistant',
+    place: 'Shanghai Jiao Tong University',
+    logo: './logos/sjtu.png',
+    duration: 'Nov. 2023 - May. 2024',
+    id: 'lab2',
+  },
+  {
+    name: 'Robotics & Automation Lab',
+    position: 'Researcher',
+    place: 'The George Washington University',
+    logo: './logos/gwu.png',
+    duration: 'Sep. 2023 - Apr. 2024',
+    id: 'lab3',
+  },
+]
+
+export const WORK: Work[] = [
+  {
+    company: 'PivotHire AI',
+    position: 'Co-Founder & CTO',
+    place: 'San Francisco, CA',
+    logo: './logos/pivothire.svg',
+    duration: 'May 2025 - Present',
+    description: 'Building an AI-driven freelancing platform for hiring match.',
+    link: 'https://www.pivothire.tech/',
+    id: 'work1',
+  },
+  {
+    company: 'Stealth Startup',
+    position: 'Founder',
+    place: 'Berkeley, CA',
+    logo: './logos/stealth.svg',
+    duration: '2025 - Present',
+    description: 'Something fun with wearable tech.',
+    link: '#',
+    id: 'work2',
+  },
+  {
+    company: 'Tech Innovation Lab',
+    position: 'Software Engineer Intern',
+    place: 'Mountain View, CA',
+    logo: './logos/techlab.svg',
+    duration: 'Summer 2024',
+    description: 'Developed scalable backend systems and APIs.',
+    id: 'work3',
+  },
+]
+
 export const BOOKS: Book[] = [
   {
     title: 'One Man\'s View of the World',
@@ -143,13 +224,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://www.linkedin.com/in/richard-yliu',
   },
   {
+    label: 'Email',
+    link: 'mailto:richard.yliu@berkeley.edu',
+  },
+  {
     label: 'Instagram',
     link: 'https://www.instagram.com/richard.yliu',
   },
-  {
-    label: 'Unsplash',
-    link: 'http://unsplash.com/@rstarg',
-  },
 ]
-
-export const EMAIL = 'richard.yongle.liu@gmail.com'
