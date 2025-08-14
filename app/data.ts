@@ -136,7 +136,7 @@ export const LABS: Lab[] = [
     id: 'lab2',
   },
   {
-    name: 'Robotics & Automation Lab',
+    name: 'Department of Political Science, Elliott School of International Affairs',
     position: 'Researcher',
     place: 'The George Washington University',
     logo: './logos/gwu.png',
