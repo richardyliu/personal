@@ -53,13 +53,22 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'Multimoda Robot Interaction and Kinematics Appication',
+    description:
+      'A rover robot that interacts with user\'s voice command via an arm.',
+    link: '',
+    media: './projects/multimodal.jpg',
+    mediaType: 'image',
+    id: 'project1',
+  },
+  {
     name: 'Handheld Navigation Device',
     description:
       'A compass-style haptic device to navigate the visually impaired.',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7355982974560935936/',
     media: './projects/advx.jpg',
     mediaType: 'image',
-    id: 'project1',
+    id: 'project2',
   },
   {
     name: 'Robotics \'25',
@@ -68,7 +77,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.thebluealliance.com/team/6353/2024',
     media: './projects/frc25.jpg',
     mediaType: 'image',
-    id: 'project2',
+    id: 'project3',
   },
   {
     name: 'Robotics \'24',
@@ -77,7 +86,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.thebluealliance.com/team/6353/2024',
     media: './projects/frc24.jpg',
     mediaType: 'image',
-    id: 'project3',
+    id: 'project4',
   },
   {
     name: 'Robotics \'23',
@@ -86,7 +95,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.thebluealliance.com/team/6353/2023',
     media: './projects/frc23.jpg',
     mediaType: 'image',
-    id: 'project4',
+    id: 'project5',
   },/*
   {
     name: 'High School AP Program 101',
