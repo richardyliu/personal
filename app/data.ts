@@ -130,15 +130,15 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const LABS: Lab[] = [
   {
     name: 'Generalist Embodied AI Lab',
-    position: 'Research Intern',
+    position: 'Research Fellow',
     place: 'Tongji University',
     logo: './logos/tongji.svg',
     duration: 'Jul. 2025 - Aug. 2025',
     id: 'lab1',
   },
   {
-    name: 'Computer Science and Engineering Department',
-    position: 'Research Assistant',
+    name: 'Department of Computer Science and Engineering',
+    position: 'Researcher',
     place: 'Shanghai Jiao Tong University',
     logo: './logos/sjtu.png',
     duration: 'Nov. 2023 - May. 2024',
