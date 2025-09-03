@@ -51,6 +51,21 @@ type SocialLink = {
   link: string
 }
 
+type Course = {
+  acronym: string
+  fullName: string
+  credits: number
+  status: 'enrolled' | 'audit'
+  id: string
+}
+
+type Semester = {
+  name: string
+  year: string
+  courses: Course[]
+  id: string
+}
+
 export const PROJECTS: Project[] = [
   {
     name: 'Multimoda Robot Interaction and Kinematics Appication',
@@ -239,5 +254,57 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Instagram',
     link: 'https://www.instagram.com/richard.yliu',
+  },
+]
+
+export const SEMESTERS: Semester[] = [
+  {
+    name: 'Fall',
+    year: '2025',
+    courses: [
+      {
+        acronym: 'COMPSCI 61A',
+        fullName: 'The Structure and Interpretation of Computer Programs',
+        credits: 4,
+        status: 'enrolled',
+        id: 'cs61a-f25',
+      },
+      {
+        acronym: 'DATA C8',
+        fullName: 'Foundations of Data Science',
+        credits: 4,
+        status: 'enrolled',
+        id: 'data8-f25',
+      },
+      {
+        acronym: 'GWS 130AC',
+        fullName: 'Gender, Race, Nation, and Health',
+        credits: 4,
+        status: 'enrolled',
+        id: 'gws130ac-f25',
+      },
+      {
+        acronym: 'LINGUIS 100',
+        fullName: 'Introduction to Linguistical Science',
+        credits: 4,
+        status: 'enrolled',
+        id: 'ling100-f25',
+      },
+      {
+        acronym: 'NUSCTX 10',
+        fullName: 'Introduction to Human Nutrition',
+        credits: 3,
+        status: 'enrolled',
+        id: 'nst10-f25',
+      },
+      {
+        acronym: 'POLSCI 5',
+        fullName: 'Introduction to International Relations',
+        credits: 4,
+        status: 'audit',
+        id: 'ps5-f25',
+      },
+    ],
+    id: 'fall-2025',
   },
 ]

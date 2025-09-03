@@ -11,13 +11,11 @@ import {
   MorphingDialogContainer,
 } from '@/components/ui/morphing-dialog'
 import Link from 'next/link'
-import { AnimatedBackground } from '@/components/ui/animated-background'
+
 import {
   PROJECTS,
   WORK_EXPERIENCE,
-  BOOKS,
   SOCIAL_LINKS,
-  LABS,
   WORK,
 } from './data'
 
@@ -177,7 +175,7 @@ export default function Personal() {
         className="mt-8"
       >
         <h3 className="mb-5 text-lg font-medium">Projects</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
@@ -201,88 +199,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Lab Experience</h3>
-        <div className="flex flex-col space-y-4">
-          {LABS.map((lab) => (
-            <div
-              key={lab.id}
-              className="relative overflow-hidden rounded-2xl bg-zinc-50/40 p-6 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50"
-            >
-              <div className="flex items-start justify-between">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
-                      src={lab.logo}
-                      alt={`${lab.name} logo`}
-                      className="h-12 w-12 rounded-lg object-cover"
-                      onError={(e) => {
-                        e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iI0YzRjRGNiIvPgo8cGF0aCBkPSJNMjQgMTJDMjcuMzEzNyAxMiAzMCAxNC42ODYzIDMwIDE4QzMwIDIxLjMxMzcgMjcuMzEzNyAyNCAyNCAyNEMyMC42ODYzIDI0IDE4IDIxLjMxMzcgMTggMThDMTggMTQuNjg2MyAyMC42ODYzIDEyIDI0IDEyWiIgZmlsbD0iIzk0QTNBNiIvPgo8cGF0aCBkPSJNMzYgMzZDMzYgMzAuNDc3MiAzMS41MjI4IDI2IDI2IDI2SDIyQzE2LjQ3NzIgMjYgMTIgMzAuNDc3MiAxMiAzNlYzOEgzNlYzNloiIGZpbGw9IiM5NEEzQTYiLz4KPC9zdmc+'
-                      }}
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-medium text-zinc-900 dark:text-zinc-50">
-                      {lab.position}
-                    </h4>
-                    <p className="text-base font-medium text-zinc-700 dark:text-zinc-300">
-                      {lab.name}
-                    </p>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                      {lab.place}
-                    </p>
-                    {lab.description && (
-                      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                        {lab.description}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <div className="flex-shrink-0 text-right">
-                  <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                    {lab.duration}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-3 text-lg font-medium">Collections</h3>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {BOOKS.map((book) => (
-              <div
-                key={book.id}
-                className="-mx-3 rounded-xl px-3 py-3"
-                data-id={book.id}
-              >
-                <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
-                    {book.title} <span className="text-zinc-500 dark:text-zinc-400 italic">by {book.author}</span>
-                  </h4>
-                </div>
-              </div>
-            ))}
-          </AnimatedBackground>
-        </div>
-      </motion.section>
     </motion.main>
   )
 }
