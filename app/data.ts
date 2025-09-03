@@ -304,6 +304,13 @@ export const SEMESTERS: Semester[] = [
         status: 'audit',
         id: 'ps5-f25',
       },
+      {
+        acronym: 'PHILOS 12A',
+        fullName: 'Introduction to Logic',
+        credits: 4,
+        status: 'audit',
+        id: 'phil12a-f25',
+      },
     ],
     id: 'fall-2025',
   },
