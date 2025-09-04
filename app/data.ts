@@ -277,11 +277,11 @@ export const SEMESTERS: Semester[] = [
         id: 'data8-f25',
       },
       {
-        acronym: 'GWS 130AC',
-        fullName: 'Gender, Race, Nation, and Health',
+        acronym: 'HISTORY 7A',
+        fullName: 'Introduction to the History of the United States',
         credits: 4,
         status: 'enrolled',
-        id: 'gws130ac-f25',
+        id: 'hist7a-f25',
       },
       {
         acronym: 'LINGUIS 100',
@@ -303,13 +303,6 @@ export const SEMESTERS: Semester[] = [
         credits: 4,
         status: 'audit',
         id: 'ps5-f25',
-      },
-      {
-        acronym: 'PHILOS 12A',
-        fullName: 'Introduction to Logic',
-        credits: 4,
-        status: 'audit',
-        id: 'phil12a-f25',
       },
     ],
     id: 'fall-2025',
