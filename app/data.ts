@@ -285,7 +285,7 @@ export const SEMESTERS: Semester[] = [
       },
       {
         acronym: 'LINGUIS 100',
-        fullName: 'Introduction to Linguistical Science',
+        fullName: 'Introduction to Linguistic Science',
         credits: 4,
         status: 'enrolled',
         id: 'ling100-f25',
