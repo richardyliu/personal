@@ -277,13 +277,6 @@ export const SEMESTERS: Semester[] = [
         id: 'data8-f25',
       },
       {
-        acronym: 'HISTORY 7A',
-        fullName: 'Introduction to the History of the United States',
-        credits: 4,
-        status: 'enrolled',
-        id: 'hist7a-f25',
-      },
-      {
         acronym: 'LINGUIS 100',
         fullName: 'Introduction to Linguistic Science',
         credits: 4,
@@ -296,6 +289,13 @@ export const SEMESTERS: Semester[] = [
         credits: 3,
         status: 'enrolled',
         id: 'nst10-f25',
+      },
+      {
+        acronym: 'INDENG 198',
+        fullName: 'Directed Group Studies for Advanced Undergraduates',
+        credits: 2,
+        status: 'enrolled',
+        id: 'indeng198-f25',
       },
       {
         acronym: 'POLSCI 5',
