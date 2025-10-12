@@ -153,9 +153,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-          I'm a Computer Science and Cognitive Science student at UC Berkeley.
+          I'm a <a href="https://eecs.berkeley.edu/academics/undergraduate/cs-ba/" target="_blank" className="underline">Computer Science</a> and <a href="https://cogsci.berkeley.edu/home" target="_blank" className="underline">Cognitive Science</a> student at <a href="https://www.berkeley.edu/" target="_blank" className="underline">UC Berkeley</a>.
           <br/><br/>
-          I'm building several startup projects, while residing in Berkeley, CA.
+          I'm building several startup projects, while residing in <a href="https://berkeleyca.gov/" target="_blank" className="underline">Berkeley, CA</a>.
           <br/><br/>
           Previously served as researcher at multiple labs, built passion-fueled projects, and collaborated with brilliant minds.
           </p>
