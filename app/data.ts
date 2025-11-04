@@ -280,7 +280,7 @@ export const BOOKS: Book[] = [
 export const ESSAYS: Essay[] = [
   {
     title: 'On Education',
-    subtitle: 'Education, Individual Success or Failure, and Society',
+    subtitle: 'Education, Individual Success, and Society',
     content: `Even children raised in the same household by the same parents still develop distinctly different personalities. These personalities may have their rough edges polished or be amplified by subsequent education and experience, but they will never fundamentally change throughout life. Even if students with drastically different personalities attend the same school and major, and even if their initial post-graduation career plans are identical, the vast majority of them will, years later, choose a career path best suited to their individual disposition.
 
 To state this less abstractly, detailed personality classifications include the basic MBTI types, the desire for wealth (how much extra time and ambition one dedicates to pursuing more money, beyond a comfortable life), the craving for self-actualization (usually positively correlated with the desire for wealth), the pursuit of personal time (usually opposed to the desire for wealth), and varying definitions of one's social value, among others.
@@ -302,7 +302,7 @@ A second way is through extensive travel. Literary works or magazines often over
 A third way is robust physical health. A pattern that rarely changes in the initial stages of study and work is that the more time you invest, the greater the return you receive. Good physical stamina can prolong the duration of focused energy, thereby ensuring a greater return during this phase. At the same time, even the most carefully planned educational and career paths may need to change, sometimes requiring a complete restart, due to external environments. It would be a great pity to be constrained by physical health at such a time. The robust physique developed in youth is the best bargaining chip when life requires a fresh start at any stage.
 
 Education is not about cultivating "elite university harvesters," "money machines," "investment banking elites," or "startup backbones," but about nurturing individuals who can know who they are and what they want earlier in their brief lives. Subsequently, they will speak up, informing the outside world of the environment and support they desire.`,
-    date: 'Oct. 10, 2025',
+    date: 'October 10, 2025',
     id: 'on-education',
   },
 ]
