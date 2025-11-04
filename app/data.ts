@@ -46,6 +46,14 @@ type Book = {
   id: string
 }
 
+type Essay = {
+  title: string
+  subtitle: string
+  content: string
+  date?: string
+  id: string
+}
+
 type SocialLink = {
   label: string
   link: string
@@ -266,6 +274,36 @@ export const BOOKS: Book[] = [
     title: 'The Maniac',
     author: 'Benjamín	Labatut',
     id: 'book6',
+  },
+]
+
+export const ESSAYS: Essay[] = [
+  {
+    title: 'On Education',
+    subtitle: 'Education, Individual Success or Failure, and Society',
+    content: `Even children raised in the same household by the same parents still develop distinctly different personalities. These personalities may have their rough edges polished or be amplified by subsequent education and experience, but they will never fundamentally change throughout life. Even if students with drastically different personalities attend the same school and major, and even if their initial post-graduation career plans are identical, the vast majority of them will, years later, choose a career path best suited to their individual disposition.
+
+To state this less abstractly, detailed personality classifications include the basic MBTI types, the desire for wealth (how much extra time and ambition one dedicates to pursuing more money, beyond a comfortable life), the craving for self-actualization (usually positively correlated with the desire for wealth), the pursuit of personal time (usually opposed to the desire for wealth), and varying definitions of one's social value, among others.
+
+Typical examples include students who graduate from top-tier universities who initially choose high-paying but time-consuming work due to external pressure. Depending on their personality, some will aggressively advance their careers, consequently sacrificing their time and health; others will gradually retreat from the intense competition and instead aim for a better work-life balance. Similarly, for students who did not graduate from top-tier universities, the difference in their early careers compared to elite graduates is that even if some of them aspire to high-paying, time-consuming jobs, such positions are rare or closed off to them. Without the support of external resources like parents or friends, their initial career options will be more limited than those of elite graduates. However, in the long run, they, like the top university students, will subconsciously gravitate toward career choices that best align with their personalities. Regardless of whether one graduates from an elite university, everyone's long-term life and work status will ultimately reach equilibrium with their inherent personality.
+
+Personality and salary are generally positively correlated. For instance, conventionally, individuals with a more diligent personality will see increased income compared to less diligent people due to longer working hours; similarly, ambitious individuals will experience a more volatile career than those who favor stability. However, with the advent of AI, the world's inherent chaos has further increased, giving rise to more factors that can influence salary and life status. Some people embrace risk, aggressively taking out loans, starting businesses, and seeking financing, but a general economic downturn will punish this group; conversely, others are content with serenity, enjoying the passage of time without much fervor, and may inadvertently avoid the disasters brought about by economic decline.
+
+Therefore, an individual's success should not be overly celebrated, as it is a joint product of the era and the individual's personality; nor should an individual's failure be overly lamented, as it is likewise the result of both external circumstances and internal personal factors.
+
+The greatest significance of education does not lie in deliberately twisting a personality to meet a single goal: gaining admission to an elite university. Rather, it is to allow the individual to understand their own personality during the educational process, provide sufficient points of reference so they can understand how their personality differs from others, and then, based on the current era, maximize the match between their personality and the world. As mentioned, no matter the external influences, an independent individual will ultimately choose the career path that feels most comfortable to them; some achieve this early in their careers, while others take a long, winding route to get there years later.
+
+How can individuals most quickly come to understand their own personalities?
+
+One way is through extensive reading. This can significantly improve language skills, allowing for greater information capture per unit of reading time, which aids in standardized tests. Secondly, it allows one to infinitely step into the lives of others. Whether it's fiction, non-fiction, or biography, the experiences of the same person may inspire deep admiration in some readers, while others may feel significantly less empathy. For example, Elon Musk's autobiography may excite and motivate adventurers, yet it may serve as a clear initial career path to avoid for conservative individuals.
+
+A second way is through extensive travel. Literary works or magazines often overstate or understate the characteristics of certain countries and regions. Instead of looking through a filter of imagination, it is better to personally tread upon those lands, taste the local food, learn about the geography, and feel the dominant culture. Food, geography, climate, history, and culture are all highly intertwined. Through travel, one can build these connections in their own mind. Secondly, one can infinitely consider how these external environmental factors have altered the life trajectories of local residents. Factors such as mountains versus plains, cold versus tropical climates, political instability versus stability, or wealth versus poverty create entirely different common traits among people. By engaging in deep travel and communicating with locals, rather than merely superficial appreciation of the scenery or lamenting the ephemerality of life, individuals can more quickly understand what kind of life suits them best.
+
+A third way is robust physical health. A pattern that rarely changes in the initial stages of study and work is that the more time you invest, the greater the return you receive. Good physical stamina can prolong the duration of focused energy, thereby ensuring a greater return during this phase. At the same time, even the most carefully planned educational and career paths may need to change, sometimes requiring a complete restart, due to external environments. It would be a great pity to be constrained by physical health at such a time. The robust physique developed in youth is the best bargaining chip when life requires a fresh start at any stage.
+
+Education is not about cultivating "elite university harvesters," "money machines," "investment banking elites," or "startup backbones," but about nurturing individuals who can know who they are and what they want earlier in their brief lives. Subsequently, they will speak up, informing the outside world of the environment and support they desire.`,
+    date: 'Oct. 10, 2025',
+    id: 'on-education',
   },
 ]
 

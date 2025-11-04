@@ -10,6 +10,7 @@ export function Header() {
     { href: '/', label: 'Home' },
     { href: '/academics', label: 'Academics' },
     { href: '/investments', label: 'Investments' },
+    { href: '/thoughts', label: 'Thoughts' },
   ]
 
   return (
