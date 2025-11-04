@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'motion/react'
 import { LABS, SEMESTERS } from '../data'
+import { Italic } from 'lucide-react'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -123,10 +124,7 @@ export default function Academics() {
                       {lab.position}
                     </h4>
                     <p className="text-base font-medium text-zinc-700 dark:text-zinc-300">
-                      {lab.name}
-                    </p>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                      {lab.place}
+                    <i>{lab.name}</i> at {lab.place}
                     </p>
                     {lab.description && (
                       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">

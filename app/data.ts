@@ -68,6 +68,15 @@ type Semester = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'DIY Go Kart',
+    description:
+      'Low budget go kart built with full suspension and 10km duration.',
+    link: 'https://wiki.firstrobotics.com.cn/',
+    media: './projects/go-kart.jpeg',
+    mediaType: 'image',
+    id: 'project11',
+  },
+  {
     name: 'Multimoda Robot Interaction and Kinematics Appication',
     description:
       'A rover robot that interacts with user\'s voice command via an arm.',
@@ -86,7 +95,7 @@ export const PROJECTS: Project[] = [
     id: 'project2',
   },
   {
-    name: 'Robotics \'25',
+    name: 'FRC Robotics \'25',
     description:
       '3-DoF mechanical arm, 180° pivoting prop intake, and F-style climbing hook.',
     link: 'https://www.thebluealliance.com/team/6353/2024',
@@ -95,7 +104,7 @@ export const PROJECTS: Project[] = [
     id: 'project3',
   },
   {
-    name: 'Robotics \'24',
+    name: 'FRC Robotics \'24',
     description:
       'Coaxial ground prop intake and rack-and-pinion angle-adjustable shooter.',
     link: 'https://www.thebluealliance.com/team/6353/2024',
@@ -104,23 +113,41 @@ export const PROJECTS: Project[] = [
     id: 'project4',
   },
   {
-    name: 'Robotics \'23',
-    description:
-      '1-stage elevator and pneumatic intake.',
+    name: 'FRC Robotics \'23',
+    description: '1-stage elevator and pneumatic intake.',
     link: 'https://www.thebluealliance.com/team/6353/2023',
     media: './projects/frc23.jpg',
     mediaType: 'image',
     id: 'project5',
-  },/*
+  },
   {
-    name: 'High School AP Program 101',
+    name: 'High School 101',
     description:
-      'Full intro to the high school life.',
-    link: 'https://efz101.hsefz-gkb.space/',
+      'Cheat sheet for skipping high school and ragebaiting teachers.',
+    link: 'https://github.com/EFZ-GKB/EFZ-GKB-101',
     media: './projects/efz101.png',
     mediaType: 'image',
-    id: 'project3',
-  },*/
+    id: 'project6',
+  },
+
+  {
+    name: 'FRC Wikipedia',
+    description:
+      'Technical wiki for the Chinese FRC community.',
+    link: 'https://wiki.firstrobotics.com.cn/',
+    media: './projects/cnfrc.jpg',
+    mediaType: 'image',
+    id: 'project10',
+  },
+  {
+    name: 'FRC Match Display',
+    description:
+      'Locally deployed web app for displaying match data during games.',
+    link: 'https://frc-match-display.vercel.app/',
+    media: './projects/frc-match-display.jpg',
+    mediaType: 'image',
+    id: 'project7',
+  }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
@@ -144,8 +171,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const LABS: Lab[] = [
   {
+    name: 'FHL Vive Center for Enhanced Reality',
+    position: 'Machine Learning & Full-Stack Researcher',
+    place: 'University of California, Berkeley',
+    logo: './logos/Vive-Center-Logo.webp',
+    duration: 'Sep. 2025 - Present',
+    id: 'lab0',
+  },
+  {
     name: 'Generalist Embodied AI Lab',
-    position: 'Research Fellow',
+    position: 'Robotics Research Fellow',
     place: 'Tongji University',
     logo: './logos/tongji.svg',
     duration: 'Jul. 2025 - Aug. 2025',
